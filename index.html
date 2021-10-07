@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <script src="./script/main.js" defer></script>
+</head>
+<body>
+  <div id="container">
+    <h1 id="title">Rock, Paper, Scissors</h1>
+    <div id="radio-btn">
+      <p>Please Select:</p>
+      <input id="rock" type='radio' name='p1Choice' value='rock' checked>
+      <label for="rock">Rock</label>
+      
+      <input id="paper" type='radio' name='p1Choice' value='paper'>
+      <label for="paper">Paper</label>
+      
+      <input id="scissors" type='radio' name='p1Choice' value='scissors'>
+      <label for="scissors">Scissors</label>
+    </div>
+    <button id="roll-btn">Shoot</button>
+    <button id="reset-btn">Reset</button>
+  </div>
+    <div id='score-board'>
+      <div id="player">You: </div>
+      <div id="computer">Computer:</div>
+      <div id="gameOutcome"></div>
+      <h2 id="score">Score</h2>
+      <div id="playerScore">Wins:</div>
+      <div id="drawScore">Draws:</div>
+      <div id="computerScore">Losses:</div>
+      <div id="gamesPlayed"></div>
+      <div id="winRatio"></div>
+    </div>
+  
+</body>
+</html>

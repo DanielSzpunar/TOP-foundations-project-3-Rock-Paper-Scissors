@@ -1,0 +1,89 @@
+#container {
+  display: grid;
+  text-align: center;
+  grid-template-areas: 
+  'title title title title'
+  'radio-btn radio-btn radio-btn radio-btn'
+  '. roll-btn reset-btn .'
+}
+#title {
+  grid-area: title;
+}
+#radio-btn {
+  padding-bottom:10px;
+  grid-area:radio-btn;
+}
+#roll-btn {
+  grid-area: roll-btn;
+  margin: .25rem;
+}
+#reset-btn {
+  grid-area: reset-btn;
+  margin: .25rem;
+}
+#score-board {
+  padding-top: 10px;;
+  text-align: center;
+  display: grid;
+  grid-template-areas: 
+  'player player computer computer'
+  'gameOutcome gameOutcome gameOutcome gameOutcome'
+  'score score score score'
+  'playerScore playerScore computerScore computerScore'
+  'drawScore drawScore drawScore drawScore'
+  'gamesPlayed gamesPlayed gamesPlayed gamesPlayed'
+  'winRatio winRatio winRatio winRatio';
+}
+#score {
+  grid-area: score;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#gameOutcome {
+  grid-area: gameOutcome;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#player {
+  grid-area: player;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#computer {
+  grid-area: computer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#playerScore {
+  grid-area: playerScore;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  
+}
+#computerScore {
+  grid-area: computerScore;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+#drawScore {
+  grid-area: drawScore;
+  margin-top:.5rem;
+}
+#gamesPlayed {
+  grid-area: gamesPlayed;
+  margin-top: .5rem;
+}
+#winRatio {
+  grid-area: winRatio;
+  margin-top:.5rem;
+}
